@@ -95,9 +95,9 @@ background-color: #28262d
     transform: scale(1.02);
 }
 .circle{
+    position: absolute;
     display: flex;
     background-color: #F0F0F0;
-    position: absolute;
     justify-self: center;
     align-self: center;
     height: 200px;
@@ -122,11 +122,6 @@ background-color: #28262d
     color: #333139;
     font-weight: bolder;
     font-family: 'Press Start 2P', cursive;
-
-
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
 }
 .button-circle-press{
     background-color: darkgrey;
