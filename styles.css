@@ -98,10 +98,8 @@ background-color: #28262d
     display: flex;
     background-color: #F0F0F0;
     position: absolute;
-    left: 45%;
-    top:50%;
-    justify-self: center;
-    align-self: center;
+    justify-self: center !important;
+    align-self: center !important;
     height: 200px;
     width:200px;
     border: 15px solid  #333139;
