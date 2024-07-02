@@ -1,10 +1,6 @@
-html{
-    height: -webkit-fill-available;
-}
 
 body{
     background-color:#333139; 
-    height: -webkit-fill-available;
 }
 
 .high-container{
@@ -16,6 +12,7 @@ body{
     margin: auto;
     
 }
+
 .title{
     font-size: 80px;
     color: #F0F0F0;
@@ -26,7 +23,7 @@ body{
 span{
     padding-left: 10px;
     padding-right: 10px;
-background-color: #28262d
+    background-color: #28262d
 }
 .upperFlex{
     display: flex;
@@ -99,12 +96,21 @@ background-color: #28262d
 .buttons:hover{
     transform: scale(1.02);
 }
+.absolute-container{
+    pointer-events: auto; 
+    width:620px;
+    height: 620px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    user-select: none;
+    visibility: hidden;
+}
 .circle{
     display: flex;
     background-color: #F0F0F0;
-    position: absolute;
-    justify-self: center !important;
-    align-self: center !important;
     height: 200px;
     width:200px;
     border: 15px solid  #333139;
@@ -112,8 +118,8 @@ background-color: #28262d
     justify-content: center;
     box-sizing: border-box;
     align-items: center;
-    z-index: 1;
     cursor: pointer;
+    visibility:visible;
 }
 
 .correctAnswer{
@@ -178,6 +184,7 @@ background-color: #28262d
     .container{
         gap: 15px;
     }
+
     .title{
         font-size: 40px;
     }
@@ -185,6 +192,11 @@ background-color: #28262d
         border: none;
         height: 150px;
         width: 150px;
+    }
+
+    .absolute-container{
+        width: 315px;
+        height: 315px
     }
     .circle{
         height: 75px;
